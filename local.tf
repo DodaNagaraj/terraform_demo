@@ -12,3 +12,11 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
+resourse "aws" {
+  ami = "ami-547ce64t2"
+  instance_type = "t2.micro"
+
+tags = {
+ Name = "Terraform_demo"
+}
+}
